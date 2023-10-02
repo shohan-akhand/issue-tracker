@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./confirm-dialog.component.css'],
 })
 export class ConfirmDialogComponent {
-  @Input() issueNo: number | null = null;
+  @Input() issueNo: Number | null = null;
   @Output() confirm = new EventEmitter<boolean>();
 
   agree() {
